@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     color: #222222;
+    padding-bottom: 80px;
 }
 
 /* NAVIGATION BAR */
@@ -43,4 +44,111 @@ nav a:hover {
     width: 90px;
     display: block;
     margin: 0 auto 10px;
+}
+
+/* HEADINGS */
+
+h1, h2, h3 {
+    color: #763376;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+/* PARAGRAPHS */
+
+p {
+    line-height: 1.6;
+}
+
+div {
+    background-color: white;
+    width: 80%;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* IMAGES */
+
+img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* PROPERTY SECTION */
+
+.properties-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* PROPERTY CARDS */
+
+.property_1, .property_2, .property_3, .property_4 {
+    background-color: white;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.property_1 img,  .property_2 img, .property_3 img, .property_4 img {
+    opacity: 0.3;
+    transition: 0.3s ease;
+}
+
+.property img:hover {
+    opacity: 1;
+}
+
+.property_1 img:hover,
+.property_2 img:hover
+.property_3 img:hover,
+.property_4 img:hover {
+    opacity: 1;
+}
+
+.featured {
+    position: relative;
+}
+
+.card {
+    overflow: hidden;
+}
+
+/* FOOTER */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+footer ul li {
+    margin: 5px 0;
 }
