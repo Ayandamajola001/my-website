@@ -42,12 +42,14 @@ Whether you're buying, selling, or renting, we make the process simple and stres
     
   <p>Learn more <a href="about.html">about us</a></p>
     <footer>
-        <p>&copy; 2026 Just Life Properties. All rights reserved.</p>
-        <!--footer links-->
+        <p>&copy; <span id="year"></span> Just Life Properties. All rights reserved.</p>
         <ul>
             <li>Privacy policy and terms of use</li>
             <li>Property listing permissions</li>
         </ul>
     </footer>
+    <script>
+document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 </body>
 </html>
