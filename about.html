@@ -10,7 +10,10 @@
      <!-- navigation -->
      <nav>
          <img src="images/Just Life Properties Logo.png" alt="Just Life Properties logo" width="150" class="logo">
-        <ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+</div>
+         <ul id="nav-menu">
             <li> <a href="home.html">Home</a></li>
             <li> <a href="about.html">About Us</a></li>
             <li> <a href="properties.html">Properties</a></li>
@@ -51,6 +54,17 @@
     </footer> 
     <script>
 document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("nav-menu");
+
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
 </script>
 </body>
 </html>

@@ -10,7 +10,10 @@
      <!-- navigation -->
      <nav>
          <img src="images/Just Life Properties Logo.png" alt="Just Life Properties logo" width="150" class="logo">
-        <ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+</div>
+         <ul id="nav-menu">
             <li> <a href="home.html">Home</a></li>
             <li> <a href="about.html">About Us</a></li>
             <li> <a href="properties.html">Properties</a></li>
@@ -23,13 +26,13 @@
     <section id="for-sale">
         <h2>Properties for Sale</h2>
         <section class="property_1">
-            <img src="images/monument house.png" width="250">
+            <img src="images/monument house.png" width="250" alt="3 bedroom house for sale in Monument, Krugersdorp">
             <h3>3 Bedroom house in Monument</h3>
             <h5>R1 800 000</h5>
             <p>3 bedrooms, 3 bathrooms, 2 garages</p>
         </section>
         <section class="property_2">
-<img src="images/Randburg.png" width="250">
+<img src="images/Randburg.png" width="250" alt="2 bedroom house for sale in North Riding, Randburg">
 <h3>2 bedroom house in North Riding</h3>
 <h5>R2 475 000</h5>
 <p>2 bedrooms, 1 bathroom, 2 garages</p>
@@ -40,14 +43,14 @@
     <section id="for-rental">
         <h2>Properties for Rental</h2>
         <section class="property_3">
-        <img src="images/North riding apartment.png" width="250">
+        <img src="images/North riding apartment.png" width="250" alt="1 bedroom apartment available for rental in North Riding, Randburg">
         <h3>1 bedroom apartment in North Riding</h3>
         <h5>R6500</h5>
         <p>1 bedroom, 1 bathroom, 1 parking spot</p>
         </section>
 
         <section class="property_4">
-            <img src="images/Fourways apartment.png" width="250">
+            <img src="images/Fourways apartment.png" width="250" alt="2 bedroom apartment available for rental in Fourways">
             <h3>2 bedroom apartment in Fourways</h3>
             <h5>R10 500</h5>
             <p>2 bedrooms, 2 bathrooms, 2 parking spots</p>
@@ -63,6 +66,17 @@
     </footer> 
     <script>
 document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("nav-menu");
+
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
 </script>
 </body>
 </html>
